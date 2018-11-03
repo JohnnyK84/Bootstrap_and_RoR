@@ -11,8 +11,143 @@
  * It is generally better to create a new file per style scope.
  *
  */
-#test {
-    color: green;
-}
+$font-stack: Open Sans;
 
+html, body {
+    width: 100%;
+    height: 100%;    
+}
+#navbarDropdown {
+    color: black;
+}
+.navbar-nav {
+    margin:auto;
+}
+.homeContainer {
+    width: 100%;
+    height: 100%;
+    background: url("awoolo_home_img.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;  
+}
+.container1 {
+    width: 33%;
+    padding-top: 5%;
+    text-align: center;
+}
+.header {
+    font-family: $font-stack;
+    color: white;
+    font-weight: 500;
+    padding-bottom: 4%;
+}
+.subt {
+    font-family: $font-stack;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    padding-bottom: 4%;
+}
+.button1 {
+    height: 50px;
+    width: 60%;
+    border: none;    
+    font-size: 16px;
+    font-family: Open Sans;
+    font-style: bold;
+    background-color: #2ce560;
+    border-radius: 25px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.container2 {    
+    width: 90%;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;    
+}
+.container3 {    
+    padding-left: 9%;
+    padding-right: 8%;
+    padding-top: 5%;
+    width: 100%;
+    background-color: rgba(0,0,0, 0.85);       
+}
+.col-lg {
+    color: white;
+    font-family: $font-stack;
+}
+.col-inner {
+    height: 100%;
+    width: 350px;
+    margin: auto;
+    h3 {
+        font-size: 24px;
+        text-align: center;
+        margin-top: 7%;
+    }
+    h4 {
+        font-size: 16px;
+        font-weight: 550;
+    }
+    p {
+        font-size: 14px;
+        text-align: center;
+    }    
+    .button2 {
+    height: 50px;
+    width: 40%;    
+    background-color: rgba(000,000,000, 0.85);
+    font-size: 14px;
+    color: white;
+    border: 1px solid  white;
+    border-radius: 25px;
+    display: block;
+    margin: auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    } 
+    .button2:hover {
+        background-color: white;
+        color: black;
+    }    
+}
+.img-container {
+    width: 350px;
+    height: 250px;
+    background-color: white;
+}
+.f-container {
+    font-style: $font-stack;
+    height: 455px;
+    background-color: black;
+}
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 276px) { 
+    .header {
+        font-size: 20px;
+    }
+    .container1 {
+        width: 80%;
+    }    
+ }
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { 
+    .header {
+        font-size: 30px;        
+    }
+    .container1 {
+        width: 50%;
+    }   
+}
+ // Large devices (desktops, less than 1200px)
+@media (min-width: 1199.98px) {
+    .header {        
+        font-size: 37px;
+    }
+    .container1 {
+        width: 30%;
+        margin-left: 20%;
+    } 
+}
  @import "bootstrap";
+ 
