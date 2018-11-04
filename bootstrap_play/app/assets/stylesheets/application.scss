@@ -121,6 +121,57 @@ html, body {
     font-style: $font-stack;
     height: 455px;
     background-color: black;
+    padding: 5%;
+    color: white;
+
+    #column-r  {
+        padding-left: 5%;
+        border-left: 2px solid grey;
+    }
+    
+    ul {
+        padding-left: 30px;
+        list-style-type: none;
+    }
+    li {
+        padding-top: 20px;
+    }
+    a {
+        font-size: 14px;
+        font-family: Open Sans;
+        font-weight: 400;
+        text-align: left;
+        color: grey;
+    }            
+    a:hover { color: #3a91d8;}
+    a:link {text-decoration: none;}
+}
+
+.footer2 {
+    border-top: 2px solid grey;
+    color: grey;
+    height: 150px;
+    width: 100%;
+    background-color: black;
+    .footlogo {
+        width: 100%;
+        display: inline-block;
+        padding-left: 10%;  
+        padding-top: 40px;            
+    }
+    p {
+        font-size: 14px;
+        display: inline-block;
+        padding-left: 4%;
+    }
+    .footbotright {
+        float: right;
+        width: 40%;
+        padding-right: 10%;
+            p {
+                padding-left: 10%;
+            }
+    }
 }
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 150px) { 
